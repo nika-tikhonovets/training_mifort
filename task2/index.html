@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style/styles.css">
+    <title>LinkedList</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="linked-list">
+    <h2 class="list-header">LinkedList</h2>
+    <div id="list" class="list">
+
+    </div>
+    <div class="size">
+        <h3 class="list-size">Size: </h3>
+        <h3 class="list-size" id="listSize">0</h3>
+    </div>
+</div>
+<div class="element-enter">
+    <input id="elementValue" class="enter-string" type="text" placeholder="Enter value...">
+    <div class="enter-position">
+        <label for="elementPosition" class="element-position">Position:</label>
+        <div class="position">
+            <label class="switch">
+                <input type="checkbox" id="switch" checked>
+                <span class="slider round"></span>
+            </label>
+            <input id="elementPosition" type="number" min="0" value="0"
+                   class="position-number" size="3" onkeydown="return false">
+        </div>
+    </div>
+    <button id="enter" class="enter-button">Enter</button>
+</div>
+<script src="dist/main.js"></script>
+</body>
+
+</html>
