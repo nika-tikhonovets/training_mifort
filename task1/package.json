@@ -1,0 +1,15 @@
+{
+  "name": "task1",
+  "version": "1.0.0",
+  "description": "alg",
+  "scripts": {
+    "test": "mocha",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.12.1",
+    "webpack-cli": "^3.0.8"
+  }
+}
