@@ -46,13 +46,19 @@ function showList() {
         div.innerHTML = "<p>"+i+".   "+linkedList.get(i).data+
             "</p><i class='fa fa-close'></i>";
         div.addEventListener("click", removeElement);
+
         $linkedList.appendChild(div);
     }
 
-    $listSize.innerText = linkedList.size();
-    $position.max = linkedList.size();
+    changeSize();
 }
 
+
+function changeSize() {
+    let size = linkedList.size();
+    $listSize.innerText = size;
+    $position.max = size;
+}
 function changeDisabled() {
     $position.disabled = !$switch.checked;
 }
